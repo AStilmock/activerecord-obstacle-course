@@ -130,7 +130,7 @@ describe 'ActiveRecord Obstacle Course, Week 1' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    # Solution goes here
+    orders_less_than_550 = Order.where("orders.amount < ?", 550)
     # ------------------------------------------------------------
 
     # Expectation
