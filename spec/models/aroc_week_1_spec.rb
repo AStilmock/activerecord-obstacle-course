@@ -115,7 +115,7 @@ describe 'ActiveRecord Obstacle Course, Week 1' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    orders_between_700_and_1000 = Order.where((orders.amount >=700) && (orders.amoutn <= 1000))
+    orders_between_700_and_1000 = Order.where("orders.amount BETWEEN ? AND ?", 700, 1000)
     # ------------------------------------------------------------
 
     # Expectation
