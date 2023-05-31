@@ -86,7 +86,7 @@ describe 'ActiveRecord Obstacle Course, Week 1' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    items = Item.includes(id)(ids_to_find).where("id")
+    items = Item.where("items.id IN (?)", ids_to_find)
     # ------------------------------------------------------------
 
     # Expectation
